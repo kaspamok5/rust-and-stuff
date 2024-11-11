@@ -21,8 +21,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "src/main.rs",
-        "templates/index.html"
+        "src/main.rs"
       ]
     },
     "vscode": {
@@ -30,6 +29,5 @@
         "rust-lang.rust-analyzer"
       ]
     }
-  },
-  "forwardPorts": [8888]
+  }
 }
