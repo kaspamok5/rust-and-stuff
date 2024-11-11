@@ -1,14 +1,6 @@
-use actix_files as fs;
-use actix_web::{App, HttpServer};
+fn main() {
+    // Statements here are executed when the compiled binary is called.
 
-#[actix_web::main]
-async fn main() -> std::io::Result<()> {
-    HttpServer::new(|| {
-        App::new()
-        .service(fs::Files::new("/static", "./static/").show_files_listing())
-        .service(fs::Files::new("/", "./templates/").index_file("index.html"))
-    })
-    .bind(("127.0.0.1", 8888))?
-    .run()
-    .await
+    // Print text to the console.
+    println!("Hello World!");
 }
